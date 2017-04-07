@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.job.usa.alex.tabexample.fragments.ItemFragment">
+        <!-- TODO: Update blank fragment layout -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/walmart_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="?android:attr/actionModeFindDrawable"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/wal_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:maxLines="2"
+                    android:text="Product name"></TextView>
+
+                <TextView
+                    android:id="@+id/wal_price_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Origin Price"></TextView>
+
+                <TextView
+                    android:id="@+id/wal_price_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale Price"></TextView>
+
+                <TextView
+                    android:id="@+id/wal_track_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Website"></TextView>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
